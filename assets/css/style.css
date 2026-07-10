@@ -213,13 +213,13 @@ button{
     min-height:720px;
 
     background:
-    linear-gradient(
-        90deg,
-        rgba(0,0,0,.97) 0%,
-        rgba(0,0,0,.82) 42%,
-        rgba(0,0,0,.15) 72%
-    ),
-    url("../images/hero.webp");
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.97) 0%,
+            rgba(0,0,0,.82) 42%,
+            rgba(0,0,0,.15) 72%
+        ),
+        url("../images/hero.webp");
 
     background-size:cover;
     background-position:right center;
