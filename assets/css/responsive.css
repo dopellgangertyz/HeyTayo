@@ -1,0 +1,338 @@
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+/* MOBILE */
+@media (max-width:767px){
+
+    .app{
+        max-width:430px;
+        padding-bottom:105px;
+    }
+
+    .header{
+        height:68px;
+        padding:0 14px;
+    }
+
+    .logo img{
+        width:135px;
+    }
+
+    .menu,
+    .gift{
+        width:46px;
+        height:46px;
+        font-size:24px;
+    }
+
+    .running{
+        height:42px;
+    }
+
+    .running span{
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:580px;
+        background-size:cover;
+        background-position:78% center;
+    }
+
+    .hero-text{
+        max-width:290px;
+        padding:55px 20px 0;
+    }
+
+    .label{
+        padding:6px 12px;
+        font-size:24px;
+    }
+
+    .hero-text h1{
+        margin-bottom:18px;
+        font-size:44px;
+    }
+
+    .feature-line{
+        padding:8px 12px;
+        margin-bottom:22px;
+        font-size:12px;
+    }
+
+    .hero-text p{
+        font-size:14px;
+        line-height:1.65;
+    }
+
+    .cta{
+        margin-top:-35px;
+        padding:0 14px;
+        gap:12px;
+    }
+
+    .cta-btn{
+        min-height:86px;
+        grid-template-columns:42px minmax(0,1fr) 14px;
+        gap:10px;
+        padding:12px;
+    }
+
+    .icon{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    .cta-btn strong{
+        font-size:18px;
+    }
+
+    .cta-btn span{
+        font-size:11px;
+    }
+
+    .cta-btn em{
+        font-size:28px;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+        margin-top:30px;
+        padding-bottom:35px;
+    }
+
+    .card{
+        min-height:160px;
+        padding:18px 12px;
+    }
+
+    .card-icon{
+        width:58px;
+        height:58px;
+        margin-bottom:14px;
+        font-size:34px;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+    .card p{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .provider-section{
+        margin-top:50px;
+        padding:0 16px 95px;
+    }
+
+    .provider-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+    }
+
+    .provider-item{
+        min-height:72px;
+        border-radius:15px;
+        font-size:14px;
+    }
+
+    .provider-item strong{
+        font-size:15px;
+    }
+
+    .provider-item span{
+        font-size:10px;
+    }
+
+    .section-head h2{
+        font-size:28px;
+    }
+
+    .section-head p{
+        font-size:13px;
+    }
+
+    .stats-section{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+        margin-top:42px;
+        padding:0 16px;
+    }
+
+    .stat-box{
+        min-height:95px;
+        border-radius:16px;
+    }
+
+    .stat-box h3{
+        font-size:26px;
+    }
+
+    .stat-box p{
+        font-size:12px;
+    }
+
+    .promo-section{
+        margin-top:45px;
+        padding:0 16px;
+    }
+
+    .promo-box{
+        min-height:auto;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:28px 22px;
+        border-radius:22px;
+    }
+
+    .promo-box h2{
+        font-size:28px;
+    }
+
+    .promo-box p{
+        font-size:14px;
+    }
+
+    .promo-btn{
+        width:100%;
+    }
+
+    .faq-section{
+        margin-top:50px;
+        padding:0 16px;
+    }
+
+    .faq-item summary{
+        padding:18px 48px 18px 18px;
+        font-size:14px;
+    }
+
+    .faq-item p{
+        padding:0 18px 18px;
+        font-size:13px;
+    }
+
+    .footer-premium{
+        margin-top:60px;
+        padding:35px 16px 120px;
+    }
+
+    .footer-top{
+        grid-template-columns:1fr;
+        gap:25px;
+        padding:24px 20px;
+    }
+
+    .footer-brand,
+    .footer-menu{
+        text-align:center;
+    }
+
+    .footer-brand img{
+        width:135px;
+        margin:0 auto 16px;
+    }
+
+    .footer-brand p{
+        margin:auto;
+        font-size:13px;
+    }
+
+    .footer-menu a:hover{
+        transform:none;
+    }
+
+    .footer-badge span{
+        padding:9px 13px;
+        font-size:11px;
+    }
+
+    .bottom-nav{
+        position:fixed;
+        left:50%;
+        bottom:0;
+        z-index:999;
+        width:100%;
+        max-width:430px;
+        height:72px;
+        margin:0;
+        border-radius:20px 20px 0 0;
+        transform:translateX(-50%);
+    }
+
+    .cursor-glow{
+        display:none;
+    }
+}
+
+/* TABLET */
+@media (min-width:768px) and (max-width:1023px){
+
+    .hero{
+        min-height:650px;
+        background-position:72% center;
+    }
+
+    .hero-text{
+        max-width:500px;
+        padding-left:40px;
+    }
+
+    .hero-text h1{
+        font-size:58px;
+    }
+
+    .cards,
+    .provider-grid,
+    .stats-section{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .footer-top{
+        grid-template-columns:1.5fr 1fr 1fr;
+    }
+}
+
+/* DESKTOP */
+@media (min-width:1024px){
+
+    .hero{
+        min-height:720px;
+        background-color:#050505;
+        background-size:auto 100%;
+        background-position:right center;
+    }
+
+    .hero-text{
+        max-width:620px;
+        padding-top:80px;
+        padding-left:70px;
+    }
+
+    .hero-text h1{
+        font-size:76px;
+    }
+
+    .cards,
+    .provider-grid,
+    .stats-section{
+        grid-template-columns:repeat(4,minmax(0,1fr));
+    }
+}
+
+/* LARGE DESKTOP */
+@media (min-width:1440px){
+
+    .hero{
+        min-height:820px;
+    }
+
+    .hero-text h1{
+        font-size:88px;
+    }
+}
