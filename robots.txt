@@ -1,5 +1,4 @@
 User-agent: *
-
 Allow: /
 
-Sitemap: https://domainanda.com/sitemap.xml
+Sitemap: https://heytayo-bzn.pages.dev/sitemap.xml
