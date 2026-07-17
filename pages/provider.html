@@ -5,40 +5,163 @@
 
     <meta
         name="viewport"
-        content="width=device-width,initial-scale=1">
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Provider Pilihan TAYO4D</title>
+    <title>Provider Pilihan TAYO4D | Daftar Game Responsif</title>
 
     <meta
         name="description"
-        content="Daftar provider pilihan TAYO4D dengan tampilan responsif, navigasi sederhana, dan akses yang mudah digunakan.">
+        content="Temukan daftar provider pilihan TAYO4D dengan navigasi sederhana, tampilan responsif, dan akses nyaman di perangkat mobile maupun desktop.">
 
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#b00000">
+    <meta name="author" content="TAYO4D">
 
     <link
         rel="canonical"
         href="https://heytayo-bzn.pages.dev/pages/provider">
 
+    <link
+        rel="icon"
+        type="image/png"
+        href="/assets/images/icon-192.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/assets/images/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TAYO4D">
+    <meta property="og:locale" content="id_ID">
+    <meta
+        property="og:url"
+        content="https://heytayo-bzn.pages.dev/pages/provider">
+
+    <meta
+        property="og:title"
+        content="Provider Pilihan TAYO4D | Daftar Game Responsif">
+
+    <meta
+        property="og:description"
+        content="Daftar provider pilihan dengan tampilan responsif dan navigasi sederhana.">
+
+    <meta
+        property="og:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <meta
+        property="og:image:alt"
+        content="Halaman provider pilihan TAYO4D">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta
+        name="twitter:title"
+        content="Provider Pilihan TAYO4D | Daftar Game Responsif">
+
+    <meta
+        name="twitter:description"
+        content="Daftar provider pilihan dengan tampilan responsif dan navigasi sederhana.">
+
+    <meta
+        name="twitter:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://heytayo-bzn.pages.dev/pages/provider#webpage",
+                "url": "https://heytayo-bzn.pages.dev/pages/provider",
+                "name": "Provider Pilihan TAYO4D",
+                "description": "Daftar provider pilihan TAYO4D dengan tampilan responsif dan navigasi sederhana.",
+                "isPartOf": {
+                    "@id": "https://heytayo-bzn.pages.dev/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://heytayo-bzn.pages.dev/pages/provider#breadcrumb"
+                },
+                "inLanguage": "id-ID"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://heytayo-bzn.pages.dev/pages/provider#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://heytayo-bzn.pages.dev/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Provider",
+                        "item": "https://heytayo-bzn.pages.dev/pages/provider"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
     <style>
+        :root {
+            --red:#ff3030;
+            --red-dark:#7d0000;
+            --gold:#ffd84a;
+            --background:#050505;
+            --panel:rgba(18,0,0,.94);
+            --text:#ffffff;
+            --muted:#cfcfcf;
+        }
+
         * {
             margin:0;
             padding:0;
             box-sizing:border-box;
         }
 
+        html {
+            scroll-behavior:smooth;
+        }
+
         body {
             min-height:100vh;
             padding:24px 14px;
+            overflow-x:hidden;
             font-family:Arial,Helvetica,sans-serif;
-            color:#fff;
+            color:var(--text);
+
             background:
                 radial-gradient(
                     circle at top,
-                    rgba(255,0,0,.18),
+                    rgba(255,0,0,.2),
                     transparent 38%
                 ),
-                #050505;
+                var(--background);
+        }
+
+        a {
+            color:inherit;
+        }
+
+        .skip-link {
+            position:absolute;
+            top:-60px;
+            left:12px;
+            z-index:100;
+            padding:10px 14px;
+            border-radius:8px;
+            color:#fff;
+            background:#b00000;
+            text-decoration:none;
+        }
+
+        .skip-link:focus {
+            top:12px;
         }
 
         .page {
@@ -52,16 +175,25 @@
             align-items:center;
             justify-content:space-between;
             gap:16px;
-            margin-bottom:28px;
+            margin-bottom:18px;
         }
 
         .brand {
-            color:#ff3030;
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            color:var(--red);
             text-decoration:none;
             font-size:24px;
             font-weight:900;
             letter-spacing:1px;
             text-shadow:0 0 14px rgba(255,0,0,.65);
+        }
+
+        .brand img {
+            width:52px;
+            height:52px;
+            object-fit:contain;
         }
 
         .back {
@@ -73,47 +205,74 @@
             background:#140000;
         }
 
+        .back:hover,
+        .back:focus-visible {
+            border-color:var(--red);
+            box-shadow:0 0 14px rgba(255,0,0,.25);
+        }
+
+        .breadcrumb {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:8px;
+            margin-bottom:18px;
+            color:#aaa;
+            font-size:13px;
+        }
+
+        .breadcrumb a {
+            color:#ddd;
+            text-decoration:none;
+        }
+
+        .breadcrumb a:hover {
+            color:var(--red);
+        }
+
         .provider-section {
-            padding:30px 20px;
+            padding:32px 20px;
             border:1px solid rgba(255,35,35,.65);
             border-radius:24px;
+
             background:
                 linear-gradient(
                     145deg,
-                    rgba(25,0,0,.94),
+                    var(--panel),
                     rgba(4,4,4,.97)
                 );
+
             box-shadow:
                 0 0 18px rgba(255,0,0,.3),
                 0 0 42px rgba(255,0,0,.14);
         }
 
         .section-head {
-            margin-bottom:26px;
+            margin-bottom:28px;
             text-align:center;
         }
 
-        .section-head span {
+        .eyebrow {
             display:block;
             margin-bottom:8px;
-            color:#ffd84a;
+            color:var(--gold);
             font-size:12px;
             font-weight:800;
             letter-spacing:2px;
         }
 
         .section-head h1 {
-            margin-bottom:10px;
+            margin-bottom:12px;
             font-size:36px;
-            color:#fff;
+            line-height:1.15;
         }
 
         .section-head p {
-            max-width:580px;
+            max-width:650px;
             margin:0 auto;
-            color:#cfcfcf;
+            color:var(--muted);
             font-size:14px;
-            line-height:1.7;
+            line-height:1.75;
         }
 
         .provider-grid {
@@ -123,7 +282,7 @@
         }
 
         .provider-item {
-            min-height:108px;
+            min-height:118px;
             padding:18px 12px;
             display:flex;
             flex-direction:column;
@@ -153,9 +312,12 @@
                 border-color .2s ease;
         }
 
-        .provider-item:hover {
+        .provider-item:hover,
+        .provider-item:focus-visible {
             transform:translateY(-4px);
-            border-color:#ff3b3b;
+            border-color:var(--red);
+            outline:none;
+
             box-shadow:
                 0 0 15px rgba(255,0,0,.3),
                 inset 0 0 16px rgba(255,0,0,.1);
@@ -167,9 +329,58 @@
         }
 
         .provider-item span {
-            color:#ffd84a;
+            color:var(--gold);
             font-size:11px;
             letter-spacing:1.5px;
+        }
+
+        .provider-info {
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:16px;
+            margin-top:28px;
+        }
+
+        .info-card {
+            padding:20px;
+            border:1px solid rgba(255,45,45,.32);
+            border-radius:16px;
+            background:rgba(255,255,255,.025);
+        }
+
+        .info-card h2 {
+            margin-bottom:10px;
+            color:var(--gold);
+            font-size:19px;
+        }
+
+        .info-card p {
+            color:var(--muted);
+            font-size:14px;
+            line-height:1.75;
+        }
+
+        .internal-nav {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:10px;
+            margin-top:28px;
+        }
+
+        .internal-nav a {
+            padding:10px 14px;
+            border:1px solid rgba(255,45,45,.48);
+            border-radius:10px;
+            color:#fff;
+            text-decoration:none;
+            background:#110000;
+        }
+
+        .internal-nav a:hover,
+        .internal-nav a:focus-visible {
+            border-color:var(--red);
+            outline:none;
         }
 
         footer {
@@ -180,7 +391,8 @@
         }
 
         @media (max-width:760px) {
-            .provider-grid {
+            .provider-grid,
+            .provider-info {
                 grid-template-columns:repeat(2,1fr);
             }
 
@@ -189,9 +401,22 @@
             }
         }
 
-        @media (max-width:420px) {
+        @media (max-width:480px) {
             body {
                 padding:12px 8px;
+            }
+
+            .topbar {
+                align-items:flex-start;
+            }
+
+            .brand {
+                font-size:20px;
+            }
+
+            .brand img {
+                width:44px;
+                height:44px;
             }
 
             .provider-section {
@@ -199,17 +424,23 @@
                 border-radius:18px;
             }
 
-            .provider-grid {
+            .provider-grid,
+            .provider-info {
+                grid-template-columns:1fr 1fr;
                 gap:10px;
             }
 
             .provider-item {
-                min-height:94px;
+                min-height:100px;
                 padding:14px 8px;
             }
 
             .provider-item strong {
                 font-size:14px;
+            }
+
+            .info-card {
+                grid-column:1 / -1;
             }
         }
     </style>
@@ -217,79 +448,165 @@
 
 <body>
 
-    <main class="page">
+    <a href="#main-content" class="skip-link">
+        Lewati ke konten
+    </a>
+
+    <div class="page">
 
         <header class="topbar">
-            <a class="brand" href="../index.html">TAYO4D</a>
+            <a
+                class="brand"
+                href="/"
+                aria-label="TAYO4D — Beranda">
 
-            <a class="back" href="../index.html">
+                <img
+                    src="/assets/images/logo.webp"
+                    alt=""
+                    width="52"
+                    height="52">
+
+                <span>TAYO4D</span>
+            </a>
+
+            <a class="back" href="/">
                 Kembali
             </a>
         </header>
 
-        <section class="provider-section">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Beranda</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Provider</span>
+        </nav>
 
-            <div class="section-head">
-                <span>GAME PROVIDER</span>
-                <h1>Provider Pilihan</h1>
+        <main id="main-content">
 
-                <p>
-                    Kumpulan provider populer dengan tampilan modern,
-                    cepat, dan responsif.
-                </p>
-            </div>
+            <section
+                class="provider-section"
+                aria-labelledby="provider-title">
 
-            <div class="provider-grid">
+                <header class="section-head">
+                    <span class="eyebrow">GAME PROVIDER</span>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>PRAGMATIC</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <h1 id="provider-title">
+                        Provider Pilihan TAYO4D
+                    </h1>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>PG SOFT</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <p>
+                        Jelajahi daftar provider pilihan yang ditampilkan
+                        dalam susunan sederhana, responsif, dan mudah digunakan
+                        pada perangkat mobile maupun desktop.
+                    </p>
+                </header>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>HABANERO</strong>
-                    <span>TAYO4D</span>
-                </a>
+                <div class="provider-grid">
 
-                <a href="../index.html" class="provider-item">
-                    <strong>IDN SLOT</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <a href="/" class="provider-item">
+                        <strong>PRAGMATIC</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>SLOT MANIA</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <a href="/" class="provider-item">
+                        <strong>PG SOFT</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>SPADEGAMING</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <a href="/" class="provider-item">
+                        <strong>HABANERO</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>PLAYTECH</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <a href="/" class="provider-item">
+                        <strong>IDN SLOT</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-                <a href="../index.html" class="provider-item">
-                    <strong>FAT PANDA</strong>
-                    <span>TAYO4D</span>
-                </a>
+                    <a href="/" class="provider-item">
+                        <strong>SLOT MANIA</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-            </div>
+                    <a href="/" class="provider-item">
+                        <strong>SPADEGAMING</strong>
+                        <span>TAYO4D</span>
+                    </a>
 
-        </section>
+                    <a href="/" class="provider-item">
+                        <strong>PLAYTECH</strong>
+                        <span>TAYO4D</span>
+                    </a>
+
+                    <a href="/" class="provider-item">
+                        <strong>FAT PANDA</strong>
+                        <span>TAYO4D</span>
+                    </a>
+
+                </div>
+
+                <div class="provider-info">
+
+                    <article class="info-card">
+                        <h2>Tampilan Responsif</h2>
+
+                        <p>
+                            Susunan provider dirancang agar tetap jelas dan
+                            mudah digunakan pada ponsel, tablet, laptop,
+                            maupun layar desktop.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h2>Navigasi Sederhana</h2>
+
+                        <p>
+                            Setiap bagian disusun secara ringkas agar pengguna
+                            dapat kembali ke halaman utama atau membuka halaman
+                            informasi lain dengan mudah.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h2>Akses Cepat</h2>
+
+                        <p>
+                            Halaman menggunakan struktur ringan tanpa dependensi
+                            JavaScript tambahan sehingga proses tampil tetap
+                            sederhana dan stabil.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h2>Informasi Terstruktur</h2>
+
+                        <p>
+                            Heading, breadcrumb, metadata, dan internal link
+                            ditata untuk membantu pengguna serta mesin pencari
+                            memahami struktur halaman.
+                        </p>
+                    </article>
+
+                </div>
+
+                <nav
+                    class="internal-nav"
+                    aria-label="Halaman informasi">
+
+                    <a href="/pages/bonus">Bonus</a>
+                    <a href="/pages/faq">FAQ</a>
+                    <a href="/pages/privacy">Privasi</a>
+                    <a href="/pages/contact">Kontak</a>
+                </nav>
+
+            </section>
+
+        </main>
 
         <footer>
             © 2026 TAYO4D — All Rights Reserved
         </footer>
 
-    </main>
+    </div>
 
 </body>
 </html>
