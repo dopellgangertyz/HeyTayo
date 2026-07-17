@@ -5,41 +5,172 @@
 
     <meta
         name="viewport"
-        content="width=device-width,initial-scale=1">
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Kebijakan Privasi TAYO4D</title>
+    <title>Kebijakan Privasi TAYO4D | Informasi dan Hak Pengguna</title>
 
     <meta
         name="description"
-        content="Kebijakan privasi TAYO4D menjelaskan penggunaan informasi, cookie, keamanan, tautan eksternal, dan hak pengguna.">
+        content="Baca kebijakan privasi TAYO4D mengenai informasi teknis, cookie, keamanan, layanan pihak ketiga, penyimpanan data, dan hak pengguna.">
 
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#b00000">
+    <meta name="author" content="TAYO4D">
 
     <link
         rel="canonical"
         href="https://heytayo-bzn.pages.dev/pages/privacy">
 
+    <link
+        rel="icon"
+        type="image/png"
+        href="/assets/images/icon-192.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/assets/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TAYO4D">
+    <meta property="og:locale" content="id_ID">
+
+    <meta
+        property="og:url"
+        content="https://heytayo-bzn.pages.dev/pages/privacy">
+
+    <meta
+        property="og:title"
+        content="Kebijakan Privasi TAYO4D | Informasi dan Hak Pengguna">
+
+    <meta
+        property="og:description"
+        content="Informasi mengenai data teknis, cookie, keamanan, layanan pihak ketiga, dan hak pengguna TAYO4D.">
+
+    <meta
+        property="og:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <meta
+        property="og:image:alt"
+        content="Halaman Kebijakan Privasi TAYO4D">
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta
+        name="twitter:title"
+        content="Kebijakan Privasi TAYO4D | Informasi dan Hak Pengguna">
+
+    <meta
+        name="twitter:description"
+        content="Informasi mengenai data teknis, cookie, keamanan, layanan pihak ketiga, dan hak pengguna TAYO4D.">
+
+    <meta
+        name="twitter:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <meta
+        name="twitter:image:alt"
+        content="Halaman Kebijakan Privasi TAYO4D">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://heytayo-bzn.pages.dev/pages/privacy#webpage",
+                "url": "https://heytayo-bzn.pages.dev/pages/privacy",
+                "name": "Kebijakan Privasi TAYO4D | Informasi dan Hak Pengguna",
+                "description": "Kebijakan privasi TAYO4D mengenai informasi teknis, cookie, keamanan, layanan pihak ketiga, penyimpanan data, dan hak pengguna.",
+                "isPartOf": {
+                    "@id": "https://heytayo-bzn.pages.dev/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://heytayo-bzn.pages.dev/pages/privacy#breadcrumb"
+                },
+                "inLanguage": "id-ID",
+                "dateModified": "2026-07-01"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://heytayo-bzn.pages.dev/pages/privacy#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://heytayo-bzn.pages.dev/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Kebijakan Privasi",
+                        "item": "https://heytayo-bzn.pages.dev/pages/privacy"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
     <style>
+        :root {
+            --red:#ff3030;
+            --gold:#ffd84a;
+            --background:#050505;
+            --panel:rgba(18,0,0,.94);
+            --text:#fff;
+            --muted:#cfcfcf;
+            --soft:#aaa;
+        }
+
         * {
             margin:0;
             padding:0;
             box-sizing:border-box;
         }
 
+        html {
+            scroll-behavior:smooth;
+        }
+
         body {
             min-height:100vh;
             padding:24px 14px;
+            overflow-x:hidden;
             font-family:Arial,Helvetica,sans-serif;
-            color:#fff;
+            color:var(--text);
 
             background:
                 radial-gradient(
                     circle at top,
-                    rgba(255,0,0,.18),
+                    rgba(255,0,0,.2),
                     transparent 38%
                 ),
-                #050505;
+                var(--background);
+        }
+
+        a {
+            color:inherit;
+        }
+
+        .skip-link {
+            position:absolute;
+            top:-60px;
+            left:12px;
+            z-index:100;
+            padding:10px 14px;
+            border-radius:8px;
+            color:#fff;
+            background:#b00000;
+            text-decoration:none;
+        }
+
+        .skip-link:focus {
+            top:12px;
         }
 
         .page {
@@ -53,16 +184,25 @@
             align-items:center;
             justify-content:space-between;
             gap:16px;
-            margin-bottom:28px;
+            margin-bottom:18px;
         }
 
         .brand {
-            color:#ff3030;
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            color:var(--red);
             text-decoration:none;
             font-size:24px;
             font-weight:900;
             letter-spacing:1px;
             text-shadow:0 0 14px rgba(255,0,0,.65);
+        }
+
+        .brand img {
+            width:52px;
+            height:52px;
+            object-fit:contain;
         }
 
         .back {
@@ -74,6 +214,34 @@
             background:#140000;
         }
 
+        .back:hover,
+        .back:focus-visible {
+            border-color:var(--red);
+            outline:none;
+            box-shadow:0 0 14px rgba(255,0,0,.25);
+        }
+
+        .breadcrumb {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:8px;
+            margin-bottom:18px;
+            color:var(--soft);
+            font-size:13px;
+        }
+
+        .breadcrumb a {
+            color:#ddd;
+            text-decoration:none;
+        }
+
+        .breadcrumb a:hover,
+        .breadcrumb a:focus-visible {
+            color:var(--red);
+            outline:none;
+        }
+
         .privacy-card {
             padding:34px 24px;
             border:1px solid rgba(255,35,35,.65);
@@ -82,7 +250,7 @@
             background:
                 linear-gradient(
                     145deg,
-                    rgba(25,0,0,.94),
+                    var(--panel),
                     rgba(4,4,4,.97)
                 );
 
@@ -92,35 +260,51 @@
         }
 
         .section-head {
-            margin-bottom:28px;
+            margin-bottom:30px;
             text-align:center;
         }
 
-        .section-head span {
+        .eyebrow {
             display:block;
             margin-bottom:8px;
-            color:#ffd84a;
+            color:var(--gold);
             font-size:12px;
             font-weight:800;
             letter-spacing:2px;
         }
 
         .section-head h1 {
-            margin-bottom:10px;
+            margin-bottom:12px;
             font-size:36px;
+            line-height:1.15;
         }
 
         .section-head p {
-            max-width:620px;
+            max-width:680px;
             margin:0 auto;
-            color:#cfcfcf;
+            color:var(--muted);
             font-size:14px;
-            line-height:1.7;
+            line-height:1.75;
+        }
+
+        .policy-summary {
+            margin-bottom:24px;
+            padding:18px;
+            border:1px solid rgba(255,216,74,.35);
+            border-radius:14px;
+            color:#ddd;
+            background:rgba(255,216,74,.035);
+            font-size:13px;
+            line-height:1.75;
+        }
+
+        .policy-summary strong {
+            color:var(--gold);
         }
 
         .content {
             display:grid;
-            gap:22px;
+            gap:18px;
         }
 
         .policy-block {
@@ -132,14 +316,19 @@
 
         .policy-block h2 {
             margin-bottom:10px;
-            color:#ffd84a;
+            color:var(--gold);
             font-size:19px;
+            line-height:1.4;
         }
 
         .policy-block p {
             color:#d0d0d0;
             font-size:14px;
             line-height:1.8;
+        }
+
+        .policy-block p + p {
+            margin-top:10px;
         }
 
         .policy-block ul {
@@ -150,11 +339,49 @@
             line-height:1.8;
         }
 
+        .policy-block li + li {
+            margin-top:6px;
+        }
+
+        .policy-block a {
+            color:#ff7777;
+        }
+
+        .policy-block a:hover,
+        .policy-block a:focus-visible {
+            color:#fff;
+            outline:none;
+        }
+
         .updated {
             margin-top:24px;
             color:#999;
             text-align:center;
             font-size:12px;
+        }
+
+        .internal-nav {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:10px;
+            margin-top:28px;
+        }
+
+        .internal-nav a {
+            padding:10px 14px;
+            border:1px solid rgba(255,45,45,.48);
+            border-radius:10px;
+            color:#fff;
+            text-decoration:none;
+            background:#110000;
+        }
+
+        .internal-nav a:hover,
+        .internal-nav a:focus-visible {
+            border-color:var(--red);
+            outline:none;
+            box-shadow:0 0 12px rgba(255,0,0,.14);
         }
 
         footer {
@@ -164,9 +391,18 @@
             font-size:12px;
         }
 
-        @media (max-width:420px) {
+        @media (max-width:480px) {
             body {
                 padding:12px 8px;
+            }
+
+            .brand {
+                font-size:20px;
+            }
+
+            .brand img {
+                width:44px;
+                height:44px;
             }
 
             .privacy-card {
@@ -187,116 +423,330 @@
 
 <body>
 
-    <main class="page">
+    <a href="#main-content" class="skip-link">
+        Lewati ke konten
+    </a>
+
+    <div class="page">
 
         <header class="topbar">
-            <a class="brand" href="../index.html">TAYO4D</a>
+            <a
+                class="brand"
+                href="/"
+                aria-label="TAYO4D — Beranda">
 
-            <a class="back" href="../index.html">
+                <img
+                    src="/assets/images/logo.webp"
+                    alt=""
+                    width="52"
+                    height="52">
+
+                <span>TAYO4D</span>
+            </a>
+
+            <a class="back" href="/">
                 Kembali
             </a>
         </header>
 
-        <article class="privacy-card">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Beranda</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Kebijakan Privasi</span>
+        </nav>
 
-            <header class="section-head">
-                <span>PRIVACY</span>
-                <h1>Kebijakan Privasi</h1>
+        <main id="main-content">
 
-                <p>
-                    Halaman ini menjelaskan bagaimana informasi digunakan,
-                    disimpan, dan dilindungi ketika pengguna mengakses TAYO4D.
+            <article
+                class="privacy-card"
+                aria-labelledby="privacy-title">
+
+                <header class="section-head">
+                    <span class="eyebrow">PRIVACY</span>
+
+                    <h1 id="privacy-title">
+                        Kebijakan Privasi TAYO4D
+                    </h1>
+
+                    <p>
+                        Kebijakan ini menjelaskan secara umum bagaimana
+                        informasi teknis dapat diproses ketika pengguna
+                        membuka halaman, menggunakan fitur, atau mengakses
+                        tautan yang tersedia di situs TAYO4D.
+                    </p>
+                </header>
+
+                <div class="policy-summary">
+                    <strong>Ringkasan:</strong>
+                    situs dapat memproses data teknis dasar untuk menjalankan
+                    halaman, menjaga keamanan, memahami performa, dan
+                    memperbaiki pengalaman pengguna. Pengguna dapat mengatur
+                    cookie dan data situs melalui pengaturan browser.
+                </div>
+
+                <div class="content">
+
+                    <section class="policy-block">
+                        <h2>1. Ruang Lingkup Kebijakan</h2>
+
+                        <p>
+                            Kebijakan privasi ini berlaku untuk halaman yang
+                            berada di bawah domain TAYO4D. Kebijakan ini tidak
+                            secara otomatis berlaku pada situs, aplikasi,
+                            atau layanan pihak ketiga yang dibuka melalui
+                            tautan eksternal.
+                        </p>
+
+                        <p>
+                            Dengan mengakses situs ini, pengguna dianggap
+                            telah membaca informasi mengenai praktik privasi
+                            yang dijelaskan pada halaman ini.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>2. Informasi yang Dapat Diproses</h2>
+
+                        <p>
+                            Ketika halaman diakses, sistem hosting, jaringan
+                            distribusi konten, alat keamanan, atau layanan
+                            analitik yang digunakan situs dapat memproses
+                            informasi teknis tertentu.
+                        </p>
+
+                        <ul>
+                            <li>Alamat Internet Protocol atau alamat IP.</li>
+                            <li>Jenis perangkat, sistem operasi, dan browser.</li>
+                            <li>Bahasa browser dan ukuran layar perangkat.</li>
+                            <li>Waktu akses serta halaman yang dikunjungi.</li>
+                            <li>Alamat halaman rujukan, apabila tersedia.</li>
+                            <li>Informasi kesalahan atau gangguan teknis.</li>
+                        </ul>
+
+                        <p>
+                            Informasi yang benar-benar diproses bergantung
+                            pada konfigurasi situs dan layanan teknis yang
+                            sedang digunakan.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>3. Informasi yang Diberikan Pengguna</h2>
+
+                        <p>
+                            Pengguna dapat memberikan informasi secara
+                            sukarela ketika menghubungi layanan bantuan,
+                            menggunakan formulir, atau berkomunikasi melalui
+                            saluran pihak ketiga.
+                        </p>
+
+                        <p>
+                            Informasi tersebut dapat mencakup nama yang
+                            digunakan, alamat kontak, isi pesan, serta
+                            informasi lain yang dimasukkan oleh pengguna.
+                            Hindari mengirimkan kata sandi atau informasi
+                            sensitif yang tidak diperlukan.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>4. Tujuan Penggunaan Informasi</h2>
+
+                        <p>
+                            Informasi teknis dan informasi yang diberikan
+                            pengguna dapat digunakan untuk:
+                        </p>
+
+                        <ul>
+                            <li>Menampilkan serta menjalankan fungsi halaman.</li>
+                            <li>Menjaga keamanan dan stabilitas layanan.</li>
+                            <li>Mendeteksi gangguan atau aktivitas tidak wajar.</li>
+                            <li>Menganalisis performa dan penggunaan halaman.</li>
+                            <li>Menjawab pertanyaan atau permintaan bantuan.</li>
+                            <li>Memperbaiki navigasi dan pengalaman pengguna.</li>
+                            <li>Memenuhi kewajiban yang berlaku apabila diperlukan.</li>
+                        </ul>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>5. Cookie dan Penyimpanan Lokal</h2>
+
+                        <p>
+                            Situs dapat menggunakan cookie, local storage,
+                            session storage, atau teknologi sejenis untuk
+                            menyimpan preferensi, membantu fungsi halaman,
+                            menjaga sesi, serta mengukur performa.
+                        </p>
+
+                        <p>
+                            Pengguna dapat menghapus atau memblokir cookie
+                            melalui pengaturan browser. Pemblokiran tertentu
+                            dapat menyebabkan beberapa fungsi halaman tidak
+                            berjalan sebagaimana mestinya.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>6. Hosting dan Layanan Teknis</h2>
+
+                        <p>
+                            Situs dapat menggunakan penyedia hosting, jaringan
+                            distribusi konten, perlindungan keamanan, analitik,
+                            atau layanan teknis lainnya. Penyedia tersebut
+                            dapat memproses data teknis sesuai peran dan
+                            kebijakan mereka masing-masing.
+                        </p>
+
+                        <p>
+                            Pemrosesan tersebut umumnya diperlukan untuk
+                            menyampaikan halaman kepada perangkat pengguna,
+                            melindungi jaringan, dan mengidentifikasi masalah
+                            teknis.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>7. Tautan dan Layanan Pihak Ketiga</h2>
+
+                        <p>
+                            Beberapa tombol atau tautan dapat membawa pengguna
+                            ke situs, aplikasi, layanan percakapan, atau
+                            platform pihak ketiga. Setelah pengguna berpindah
+                            dari situs ini, penggunaan informasi akan tunduk
+                            pada kebijakan pihak ketiga tersebut.
+                        </p>
+
+                        <p>
+                            Pengguna disarankan membaca kebijakan privasi dan
+                            ketentuan layanan pihak ketiga sebelum memberikan
+                            informasi pribadi.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>8. Penyimpanan Informasi</h2>
+
+                        <p>
+                            Informasi dapat disimpan selama diperlukan untuk
+                            menjalankan fungsi situs, menjaga keamanan,
+                            menyelesaikan permintaan pengguna, atau memenuhi
+                            kebutuhan operasional yang sah.
+                        </p>
+
+                        <p>
+                            Masa penyimpanan dapat berbeda berdasarkan jenis
+                            informasi, tujuan pemrosesan, sistem yang digunakan,
+                            dan kewajiban yang berlaku.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>9. Keamanan Informasi</h2>
+
+                        <p>
+                            Langkah teknis dan administratif yang wajar dapat
+                            diterapkan untuk membantu menjaga keamanan sistem,
+                            membatasi akses, dan mengurangi risiko gangguan.
+                        </p>
+
+                        <p>
+                            Meskipun demikian, tidak ada transmisi atau sistem
+                            penyimpanan berbasis internet yang dapat dijamin
+                            sepenuhnya aman. Pengguna juga bertanggung jawab
+                            menjaga keamanan perangkat, browser, dan informasi
+                            akses mereka sendiri.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>10. Hak dan Pilihan Pengguna</h2>
+
+                        <p>
+                            Bergantung pada layanan yang digunakan dan aturan
+                            yang berlaku, pengguna dapat memiliki pilihan
+                            untuk:
+                        </p>
+
+                        <ul>
+                            <li>Mengatur atau menghapus cookie melalui browser.</li>
+                            <li>Menghapus data lokal yang tersimpan di perangkat.</li>
+                            <li>Meminta informasi mengenai penggunaan data tertentu.</li>
+                            <li>Meminta koreksi atau penghapusan informasi yang diberikan.</li>
+                            <li>Menghentikan penggunaan halaman atau layanan terkait.</li>
+                            <li>Menghubungi layanan bantuan untuk pertanyaan privasi.</li>
+                        </ul>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>11. Privasi Anak</h2>
+
+                        <p>
+                            Situs ini tidak ditujukan untuk anak-anak. Pengguna
+                            harus memenuhi persyaratan usia yang berlaku pada
+                            wilayah dan layanan yang digunakan.
+                        </p>
+
+                        <p>
+                            Orang tua atau wali yang mengetahui bahwa seorang
+                            anak telah memberikan informasi tanpa izin dapat
+                            menghubungi layanan bantuan melalui halaman Kontak.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>12. Perubahan Kebijakan</h2>
+
+                        <p>
+                            Kebijakan privasi dapat diperbarui apabila terdapat
+                            perubahan fungsi situs, teknologi, penyedia layanan,
+                            atau kebutuhan operasional.
+                        </p>
+
+                        <p>
+                            Versi terbaru akan ditampilkan pada halaman ini
+                            bersama informasi waktu pembaruan. Pengguna
+                            disarankan memeriksa halaman ini secara berkala.
+                        </p>
+                    </section>
+
+                    <section class="policy-block">
+                        <h2>13. Pertanyaan Mengenai Privasi</h2>
+
+                        <p>
+                            Pertanyaan mengenai kebijakan ini dapat disampaikan
+                            melalui
+                            <a href="/pages/contact">halaman Kontak TAYO4D</a>.
+                            Sertakan penjelasan yang cukup agar permintaan dapat
+                            ditinjau dengan tepat.
+                        </p>
+                    </section>
+
+                </div>
+
+                <p class="updated">
+                    Terakhir diperbarui:
+                    <time datetime="2026-07-01">Juli 2026</time>
                 </p>
-            </header>
 
-            <div class="content">
+                <nav
+                    class="internal-nav"
+                    aria-label="Halaman informasi">
 
-                <section class="policy-block">
-                    <h2>1. Informasi yang Diproses</h2>
+                    <a href="/pages/provider">Provider</a>
+                    <a href="/pages/bonus">Bonus</a>
+                    <a href="/pages/faq">FAQ</a>
+                    <a href="/pages/contact">Kontak</a>
+                </nav>
 
-                    <p>
-                        Website dapat memproses informasi teknis dasar seperti
-                        jenis perangkat, browser, halaman yang dikunjungi,
-                        waktu akses, dan alamat IP untuk kebutuhan keamanan
-                        dan analisis performa.
-                    </p>
-                </section>
+            </article>
 
-                <section class="policy-block">
-                    <h2>2. Penggunaan Informasi</h2>
-
-                    <p>
-                        Informasi digunakan untuk menjaga stabilitas layanan,
-                        meningkatkan pengalaman pengguna, memahami performa
-                        halaman, dan mencegah aktivitas yang merugikan.
-                    </p>
-                </section>
-
-                <section class="policy-block">
-                    <h2>3. Cookie dan Teknologi Sejenis</h2>
-
-                    <p>
-                        Website dapat menggunakan cookie atau penyimpanan lokal
-                        untuk mengingat preferensi, mendukung fungsi halaman,
-                        dan membantu analisis penggunaan.
-                    </p>
-                </section>
-
-                <section class="policy-block">
-                    <h2>4. Tautan Eksternal</h2>
-
-                    <p>
-                        Beberapa tombol dapat mengarah ke layanan atau website
-                        pihak ketiga. Kebijakan privasi pihak ketiga berlaku
-                        setelah pengguna meninggalkan website ini.
-                    </p>
-                </section>
-
-                <section class="policy-block">
-                    <h2>5. Keamanan Informasi</h2>
-
-                    <p>
-                        Langkah teknis yang wajar diterapkan untuk membantu
-                        menjaga informasi dan stabilitas halaman. Namun, tidak
-                        ada sistem internet yang dapat dijamin sepenuhnya bebas
-                        dari risiko.
-                    </p>
-                </section>
-
-                <section class="policy-block">
-                    <h2>6. Hak Pengguna</h2>
-
-                    <p>
-                        Pengguna dapat mengatur cookie melalui browser,
-                        menghapus data lokal, menghentikan penggunaan halaman,
-                        atau menghubungi layanan bantuan untuk pertanyaan
-                        terkait privasi.
-                    </p>
-                </section>
-
-                <section class="policy-block">
-                    <h2>7. Perubahan Kebijakan</h2>
-
-                    <p>
-                        Kebijakan ini dapat diperbarui apabila terdapat
-                        perubahan fungsi, teknologi, atau kebutuhan operasional.
-                        Versi terbaru akan ditampilkan pada halaman ini.
-                    </p>
-                </section>
-
-            </div>
-
-            <p class="updated">
-                Terakhir diperbarui: Juli 2026
-            </p>
-
-        </article>
+        </main>
 
         <footer>
             © 2026 TAYO4D — All Rights Reserved
         </footer>
 
-    </main>
+    </div>
 
 </body>
 </html>
