@@ -1,30 +1,661 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontak</title>
-<link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Kontak TAYO4D | Layanan Bantuan dan Informasi</title>
+
+    <meta
+        name="description"
+        content="Hubungi layanan bantuan TAYO4D untuk memperoleh informasi mengenai akses halaman, navigasi, kendala teknis, dan pertanyaan umum.">
+
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#b00000">
+    <meta name="author" content="TAYO4D">
+
+    <link
+        rel="canonical"
+        href="https://heytayo-bzn.pages.dev/pages/contact">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/assets/images/icon-192.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/assets/images/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TAYO4D">
+    <meta property="og:locale" content="id_ID">
+
+    <meta
+        property="og:url"
+        content="https://heytayo-bzn.pages.dev/pages/contact">
+
+    <meta
+        property="og:title"
+        content="Kontak TAYO4D | Layanan Bantuan dan Informasi">
+
+    <meta
+        property="og:description"
+        content="Hubungi layanan bantuan TAYO4D untuk pertanyaan umum, akses halaman, navigasi, dan kendala teknis.">
+
+    <meta
+        property="og:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <meta
+        property="og:image:alt"
+        content="Halaman Kontak TAYO4D">
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta
+        name="twitter:title"
+        content="Kontak TAYO4D | Layanan Bantuan dan Informasi">
+
+    <meta
+        name="twitter:description"
+        content="Hubungi layanan bantuan TAYO4D untuk pertanyaan umum, akses halaman, navigasi, dan kendala teknis.">
+
+    <meta
+        name="twitter:image"
+        content="https://heytayo-bzn.pages.dev/assets/images/hero.webp">
+
+    <meta
+        name="twitter:image:alt"
+        content="Halaman Kontak TAYO4D">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ContactPage",
+                "@id": "https://heytayo-bzn.pages.dev/pages/contact#webpage",
+                "url": "https://heytayo-bzn.pages.dev/pages/contact",
+                "name": "Kontak TAYO4D | Layanan Bantuan dan Informasi",
+                "description": "Halaman kontak TAYO4D untuk memperoleh bantuan mengenai akses halaman, navigasi, dan kendala teknis.",
+                "isPartOf": {
+                    "@id": "https://heytayo-bzn.pages.dev/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://heytayo-bzn.pages.dev/pages/contact#breadcrumb"
+                },
+                "inLanguage": "id-ID"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://heytayo-bzn.pages.dev/pages/contact#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://heytayo-bzn.pages.dev/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Kontak",
+                        "item": "https://heytayo-bzn.pages.dev/pages/contact"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --red:#ff3030;
+            --gold:#ffd84a;
+            --background:#050505;
+            --panel:rgba(18,0,0,.94);
+            --text:#fff;
+            --muted:#cfcfcf;
+            --soft:#aaa;
+        }
+
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html {
+            scroll-behavior:smooth;
+        }
+
+        body {
+            min-height:100vh;
+            padding:24px 14px;
+            overflow-x:hidden;
+            font-family:Arial,Helvetica,sans-serif;
+            color:var(--text);
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    rgba(255,0,0,.2),
+                    transparent 38%
+                ),
+                var(--background);
+        }
+
+        a {
+            color:inherit;
+        }
+
+        .skip-link {
+            position:absolute;
+            top:-60px;
+            left:12px;
+            z-index:100;
+            padding:10px 14px;
+            border-radius:8px;
+            color:#fff;
+            background:#b00000;
+            text-decoration:none;
+        }
+
+        .skip-link:focus {
+            top:12px;
+        }
+
+        .page {
+            width:100%;
+            max-width:920px;
+            margin:0 auto;
+        }
+
+        .topbar {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:16px;
+            margin-bottom:18px;
+        }
+
+        .brand {
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            color:var(--red);
+            text-decoration:none;
+            font-size:24px;
+            font-weight:900;
+            letter-spacing:1px;
+            text-shadow:0 0 14px rgba(255,0,0,.65);
+        }
+
+        .brand img {
+            width:52px;
+            height:52px;
+            object-fit:contain;
+        }
+
+        .back {
+            padding:10px 16px;
+            border:1px solid rgba(255,45,45,.7);
+            border-radius:12px;
+            color:#fff;
+            text-decoration:none;
+            background:#140000;
+        }
+
+        .back:hover,
+        .back:focus-visible {
+            border-color:var(--red);
+            outline:none;
+            box-shadow:0 0 14px rgba(255,0,0,.25);
+        }
+
+        .breadcrumb {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:8px;
+            margin-bottom:18px;
+            color:var(--soft);
+            font-size:13px;
+        }
+
+        .breadcrumb a {
+            color:#ddd;
+            text-decoration:none;
+        }
+
+        .breadcrumb a:hover,
+        .breadcrumb a:focus-visible {
+            color:var(--red);
+            outline:none;
+        }
+
+        .contact-section {
+            padding:34px 24px;
+            border:1px solid rgba(255,35,35,.65);
+            border-radius:24px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    var(--panel),
+                    rgba(4,4,4,.97)
+                );
+
+            box-shadow:
+                0 0 18px rgba(255,0,0,.3),
+                0 0 42px rgba(255,0,0,.14);
+        }
+
+        .section-head {
+            margin-bottom:30px;
+            text-align:center;
+        }
+
+        .eyebrow {
+            display:block;
+            margin-bottom:8px;
+            color:var(--gold);
+            font-size:12px;
+            font-weight:800;
+            letter-spacing:2px;
+        }
+
+        .section-head h1 {
+            margin-bottom:12px;
+            font-size:36px;
+            line-height:1.15;
+        }
+
+        .section-head p {
+            max-width:680px;
+            margin:0 auto;
+            color:var(--muted);
+            font-size:14px;
+            line-height:1.75;
+        }
+
+        .contact-grid {
+            display:grid;
+            grid-template-columns:repeat(2,minmax(0,1fr));
+            gap:16px;
+        }
+
+        .contact-card {
+            min-height:245px;
+            padding:24px 20px;
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+
+            border:1px solid rgba(255,45,45,.45);
+            border-radius:18px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(255,255,255,.045),
+                    rgba(255,0,0,.025)
+                );
+
+            transition:
+                transform .2s ease,
+                border-color .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .contact-card:hover {
+            transform:translateY(-4px);
+            border-color:var(--red);
+            box-shadow:0 0 18px rgba(255,0,0,.18);
+        }
+
+        .contact-icon {
+            width:52px;
+            height:52px;
+            margin-bottom:16px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            border:1px solid rgba(255,216,74,.55);
+            border-radius:15px;
+
+            background:#170000;
+            font-size:25px;
+            box-shadow:0 0 14px rgba(255,0,0,.18);
+        }
+
+        .contact-card h2 {
+            margin-bottom:10px;
+            color:var(--gold);
+            font-size:21px;
+        }
+
+        .contact-card p {
+            margin-bottom:18px;
+            color:var(--muted);
+            font-size:14px;
+            line-height:1.75;
+        }
+
+        .contact-button {
+            margin-top:auto;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            min-height:44px;
+            padding:11px 17px;
+
+            border:1px solid rgba(255,45,45,.8);
+            border-radius:11px;
+
+            color:#fff;
+            background:
+                linear-gradient(
+                    180deg,
+                    #b60000,
+                    #760000
+                );
+
+            text-decoration:none;
+            font-size:14px;
+            font-weight:800;
+
+            box-shadow:0 0 16px rgba(255,0,0,.2);
+        }
+
+        .contact-button:hover,
+        .contact-button:focus-visible {
+            border-color:#ff7777;
+            outline:none;
+            box-shadow:0 0 20px rgba(255,0,0,.35);
+        }
+
+        .info-section {
+            display:grid;
+            grid-template-columns:repeat(2,minmax(0,1fr));
+            gap:16px;
+            margin-top:22px;
+        }
+
+        .info-card {
+            padding:20px;
+            border:1px solid rgba(255,45,45,.32);
+            border-radius:16px;
+            background:rgba(255,255,255,.025);
+        }
+
+        .info-card h2 {
+            margin-bottom:10px;
+            color:var(--gold);
+            font-size:18px;
+        }
+
+        .info-card p,
+        .info-card li {
+            color:var(--muted);
+            font-size:14px;
+            line-height:1.75;
+        }
+
+        .info-card ul {
+            padding-left:20px;
+        }
+
+        .info-card li + li {
+            margin-top:6px;
+        }
+
+        .notice {
+            margin-top:22px;
+            padding:18px;
+            border:1px solid rgba(255,216,74,.35);
+            border-radius:14px;
+            color:#ddd;
+            background:rgba(255,216,74,.035);
+            font-size:13px;
+            line-height:1.75;
+        }
+
+        .notice strong {
+            color:var(--gold);
+        }
+
+        .internal-nav {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:10px;
+            margin-top:28px;
+        }
+
+        .internal-nav a {
+            padding:10px 14px;
+            border:1px solid rgba(255,45,45,.48);
+            border-radius:10px;
+            color:#fff;
+            text-decoration:none;
+            background:#110000;
+        }
+
+        .internal-nav a:hover,
+        .internal-nav a:focus-visible {
+            border-color:var(--red);
+            outline:none;
+            box-shadow:0 0 12px rgba(255,0,0,.14);
+        }
+
+        footer {
+            padding:24px 10px 6px;
+            text-align:center;
+            color:#999;
+            font-size:12px;
+        }
+
+        @media (max-width:680px) {
+            .contact-grid,
+            .info-section {
+                grid-template-columns:1fr;
+            }
+        }
+
+        @media (max-width:480px) {
+            body {
+                padding:12px 8px;
+            }
+
+            .brand {
+                font-size:20px;
+            }
+
+            .brand img {
+                width:44px;
+                height:44px;
+            }
+
+            .contact-section {
+                padding:24px 12px;
+                border-radius:18px;
+            }
+
+            .section-head h1 {
+                font-size:30px;
+            }
+
+            .contact-card {
+                min-height:auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="app">
-    <header class="header">
-        <a href="../index.html" class="menu">←</a>
-        <a href="../index.html" class="logo">
-            <img src="../assets/images/logo.webp" alt="TAYO4D">
-        </a>
-        <div class="gift">💬</div>
-    </header>
+    <a href="#main-content" class="skip-link">
+        Lewati ke konten
+    </a>
 
-    <section class="cards" style="margin-top:40px;">
-        <div class="card">
-            <div class="card-icon">💬</div>
-            <h3>LIVE<br>CHAT</h3>
-            <p>Hubungi layanan bantuan untuk mendapatkan informasi lebih lanjut.</p>
-        </div>
-    </section>
-</div>
+    <div class="page">
+
+        <header class="topbar">
+            <a
+                class="brand"
+                href="/"
+                aria-label="TAYO4D — Beranda">
+
+                <img
+                    src="/assets/images/logo.webp"
+                    alt=""
+                    width="52"
+                    height="52">
+
+                <span>TAYO4D</span>
+            </a>
+
+            <a class="back" href="/">
+                Kembali
+            </a>
+        </header>
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Beranda</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Kontak</span>
+        </nav>
+
+        <main id="main-content">
+
+            <section
+                class="contact-section"
+                aria-labelledby="contact-title">
+
+                <header class="section-head">
+                    <span class="eyebrow">BANTUAN</span>
+
+                    <h1 id="contact-title">
+                        Hubungi TAYO4D
+                    </h1>
+
+                    <p>
+                        Gunakan saluran bantuan yang tersedia untuk memperoleh
+                        informasi mengenai akses halaman, navigasi, fitur,
+                        atau kendala teknis yang Anda alami.
+                    </p>
+                </header>
+
+                <div class="contact-grid">
+
+                    <article class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">
+                            💬
+                        </div>
+
+                        <h2>Live Chat</h2>
+
+                        <p>
+                            Gunakan fitur Live Chat pada halaman utama untuk
+                            menghubungi layanan bantuan dan menyampaikan
+                            pertanyaan secara langsung.
+                        </p>
+
+                        <a
+                            class="contact-button"
+                            href="https://secure.livechatenterprise.com/licence/15293634/v2/open_chat.cgi"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Buka Live Chat
+                        </a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">
+                            ❓
+                        </div>
+
+                        <h2>Pusat Informasi</h2>
+
+                        <p>
+                            Baca halaman pertanyaan umum untuk menemukan
+                            solusi dasar mengenai akses, perangkat, navigasi,
+                            dan tampilan halaman.
+                        </p>
+
+                        <a
+                            class="contact-button"
+                            href="/pages/faq">
+
+                            Buka FAQ
+                        </a>
+                    </article>
+
+                </div>
+
+                <div class="info-section">
+
+                    <section class="info-card">
+                        <h2>Sebelum Menghubungi</h2>
+
+                        <ul>
+                            <li>Jelaskan kendala secara singkat dan jelas.</li>
+                            <li>Sebutkan halaman yang sedang dibuka.</li>
+                            <li>Sertakan jenis perangkat dan browser.</li>
+                            <li>Jangan mengirimkan kata sandi.</li>
+                            <li>Hindari membagikan informasi sensitif.</li>
+                        </ul>
+                    </section>
+
+                    <section class="info-card">
+                        <h2>Kendala Tampilan Halaman</h2>
+
+                        <p>
+                            Apabila halaman tidak tampil dengan benar,
+                            lakukan refresh, periksa koneksi internet,
+                            bersihkan cache browser, lalu coba kembali
+                            menggunakan browser versi terbaru.
+                        </p>
+                    </section>
+
+                </div>
+
+                <div class="notice">
+                    <strong>Keamanan:</strong>
+                    jangan pernah memberikan kata sandi, kode verifikasi,
+                    atau informasi sensitif kepada pihak yang tidak dapat
+                    dipastikan keasliannya.
+                </div>
+
+                <nav
+                    class="internal-nav"
+                    aria-label="Halaman informasi">
+
+                    <a href="/">Beranda</a>
+                    <a href="/pages/provider">Provider</a>
+                    <a href="/pages/bonus">Bonus</a>
+                    <a href="/pages/faq">FAQ</a>
+                    <a href="/pages/privacy">Privasi</a>
+                </nav>
+
+            </section>
+
+        </main>
+
+        <footer>
+            © 2026 TAYO4D — All Rights Reserved
+        </footer>
+
+    </div>
 
 </body>
 </html>
