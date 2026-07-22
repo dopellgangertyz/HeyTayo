@@ -35,10 +35,6 @@
     }
 }
 
-.running span{
-    will-change:transform;
-}
-
 .hero-text{
     animation:fadeUp .8s ease both;
 }
@@ -51,11 +47,26 @@
     animation:fadeUp .9s ease both;
 }
 
+.card:nth-child(2){
+    animation-delay:.08s;
+}
+
+.card:nth-child(3){
+    animation-delay:.16s;
+}
+
+.card:nth-child(4){
+    animation-delay:.24s;
+}
+
+.card:nth-child(5){
+    animation-delay:.32s;
+}
+
 /*
    Gunakan glowPulse di sini saja.
    Hapus animasi softGlow untuk logo, menu, dan gift dari style.css.
 */
-.logo,
 .menu,
 .gift{
     animation:glowPulse 3.2s ease-in-out infinite;
@@ -97,8 +108,12 @@
     *,
     *::before,
     *::after{
-        animation-duration:.01ms !important;
-        animation-iteration-count:1 !important;
-        transition-duration:.01ms !important;
+        animation:none !important;
+        transition:none !important;
+    }
+
+    .reveal{
+        opacity:1 !important;
+        transform:none !important;
     }
 }

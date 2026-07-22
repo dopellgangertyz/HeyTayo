@@ -18,22 +18,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const runCounter = (counter) => {
         const target = Number(counter.dataset.target);
+
+        if (!Number.isFinite(target) || target < 0) {
+            return;
+        }
+
         let current = 0;
+        const increment = Math.max(1, Math.ceil(target / 60));
+
+        counter.textContent = "0%";
 
         const update = () => {
-            current += 2;
+            current += increment;
 
             if (current >= target) {
-                counter.textContent = target + "%";
+                counter.textContent = `${target}%`;
                 return;
-            }
+        }
 
-            counter.textContent = current + "%";
+            counter.textContent = `${current}%`;
             requestAnimationFrame(update);
         };
 
         update();
-    };
+};
 
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

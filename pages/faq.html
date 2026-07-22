@@ -21,6 +21,8 @@
         rel="canonical"
         href="https://heytayo-bzn.pages.dev/pages/faq">
 
+    <link rel="stylesheet" href="/assets/css/subpages.css">
+
     <link
         rel="icon"
         type="image/png"
@@ -172,448 +174,141 @@
     }
     </script>
 
-    <style>
-        :root {
-            --red:#ff3030;
-            --gold:#ffd84a;
-            --background:#050505;
-            --panel:rgba(18,0,0,.94);
-            --text:#fff;
-            --muted:#cfcfcf;
-        }
+    </head>
 
-        * {
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        html {
-            scroll-behavior:smooth;
-        }
-
-        body {
-            min-height:100vh;
-            padding:24px 14px;
-            overflow-x:hidden;
-            font-family:Arial,Helvetica,sans-serif;
-            color:var(--text);
-
-            background:
-                radial-gradient(
-                    circle at top,
-                    rgba(255,0,0,.2),
-                    transparent 38%
-                ),
-                var(--background);
-        }
-
-        a {
-            color:inherit;
-        }
-
-        .skip-link {
-            position:absolute;
-            top:-60px;
-            left:12px;
-            z-index:100;
-            padding:10px 14px;
-            border-radius:8px;
-            color:#fff;
-            background:#b00000;
-            text-decoration:none;
-        }
-
-        .skip-link:focus {
-            top:12px;
-        }
-
-        .page {
-            width:100%;
-            max-width:920px;
-            margin:0 auto;
-        }
-
-        .topbar {
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:16px;
-            margin-bottom:18px;
-        }
-
-        .brand {
-            display:inline-flex;
-            align-items:center;
-            gap:10px;
-            color:var(--red);
-            text-decoration:none;
-            font-size:24px;
-            font-weight:900;
-            letter-spacing:1px;
-            text-shadow:0 0 14px rgba(255,0,0,.65);
-        }
-
-        .brand img {
-            width:52px;
-            height:52px;
-            object-fit:contain;
-        }
-
-        .back {
-            padding:10px 16px;
-            border:1px solid rgba(255,45,45,.7);
-            border-radius:12px;
-            color:#fff;
-            text-decoration:none;
-            background:#140000;
-        }
-
-        .back:hover,
-        .back:focus-visible {
-            border-color:var(--red);
-            outline:none;
-            box-shadow:0 0 14px rgba(255,0,0,.25);
-        }
-
-        .breadcrumb {
-            display:flex;
-            flex-wrap:wrap;
-            align-items:center;
-            gap:8px;
-            margin-bottom:18px;
-            color:#aaa;
-            font-size:13px;
-        }
-
-        .breadcrumb a {
-            color:#ddd;
-            text-decoration:none;
-        }
-
-        .breadcrumb a:hover {
-            color:var(--red);
-        }
-
-        .faq-section {
-            padding:32px 20px;
-            border:1px solid rgba(255,35,35,.65);
-            border-radius:24px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    var(--panel),
-                    rgba(4,4,4,.97)
-                );
-
-            box-shadow:
-                0 0 18px rgba(255,0,0,.3),
-                0 0 42px rgba(255,0,0,.14);
-        }
-
-        .section-head {
-            margin-bottom:28px;
-            text-align:center;
-        }
-
-        .eyebrow {
-            display:block;
-            margin-bottom:8px;
-            color:var(--gold);
-            font-size:12px;
-            font-weight:800;
-            letter-spacing:2px;
-        }
-
-        .section-head h1 {
-            margin-bottom:12px;
-            font-size:36px;
-            line-height:1.15;
-        }
-
-        .section-head p {
-            max-width:650px;
-            margin:0 auto;
-            color:var(--muted);
-            font-size:14px;
-            line-height:1.75;
-        }
-
-        .faq-list {
-            display:grid;
-            gap:14px;
-        }
-
-        .faq-item {
-            overflow:hidden;
-            border:1px solid rgba(255,45,45,.55);
-            border-radius:15px;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    rgba(255,255,255,.035),
-                    rgba(255,0,0,.025)
-                );
-        }
-
-        .faq-item[open] {
-            border-color:rgba(255,48,48,.9);
-            box-shadow:0 0 16px rgba(255,0,0,.14);
-        }
-
-        summary {
-            position:relative;
-            padding:18px 50px 18px 18px;
-            cursor:pointer;
-            list-style:none;
-            font-size:15px;
-            font-weight:800;
-            line-height:1.45;
-        }
-
-        summary::-webkit-details-marker {
-            display:none;
-        }
-
-        summary::after {
-            content:"+";
-            position:absolute;
-            top:50%;
-            right:18px;
-            transform:translateY(-50%);
-            color:var(--red);
-            font-size:24px;
-            font-weight:900;
-        }
-
-        details[open] summary::after {
-            content:"−";
-        }
-
-        summary:focus-visible {
-            outline:2px solid var(--gold);
-            outline-offset:-4px;
-        }
-
-        .answer {
-            padding:0 18px 18px;
-            color:var(--muted);
-            font-size:14px;
-            line-height:1.75;
-        }
-
-        .internal-nav {
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            gap:10px;
-            margin-top:28px;
-        }
-
-        .internal-nav a {
-            padding:10px 14px;
-            border:1px solid rgba(255,45,45,.48);
-            border-radius:10px;
-            color:#fff;
-            text-decoration:none;
-            background:#110000;
-        }
-
-        .internal-nav a:hover,
-        .internal-nav a:focus-visible {
-            border-color:var(--red);
-            outline:none;
-        }
-
-        footer {
-            padding:24px 10px 6px;
-            text-align:center;
-            color:#999;
-            font-size:12px;
-        }
-
-        @media (max-width:480px) {
-            body {
-                padding:12px 8px;
-            }
-
-            .brand {
-                font-size:20px;
-            }
-
-            .brand img {
-                width:44px;
-                height:44px;
-            }
-
-            .faq-section {
-                padding:24px 12px;
-                border-radius:18px;
-            }
-
-            .section-head h1 {
-                font-size:30px;
-            }
-
-            summary {
-                padding:16px 46px 16px 14px;
-                font-size:14px;
-            }
-
-            .answer {
-                padding:0 14px 16px;
-            }
-        }
-    </style>
-</head>
-
-<body>
+    <body class="subpage">
 
     <a href="#main-content" class="skip-link">
         Lewati ke konten
     </a>
 
-    <div class="page">
+    <div class="subpage-container">
 
-        <header class="topbar">
-            <a
-                class="brand"
-                href="/"
-                aria-label="TAYO4D — Beranda">
+    <header class="subpage-header">
+        <a class="subpage-brand" href="/" aria-label="TAYO4D — Beranda">
+            <img
+                src="/assets/images/logo.webp"
+                alt=""
+                width="52"
+                height="52">
+            <span>TAYO4D</span>
+        </a>
 
-                <img
-                    src="/assets/images/logo.webp"
-                    alt=""
-                    width="52"
-                    height="52">
+        <a class="subpage-back" href="/">
+            Kembali
+        </a>
+    </header>
 
-                <span>TAYO4D</span>
-            </a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Beranda</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">FAQ</span>
+    </nav>
 
-            <a class="back" href="/">
-                Kembali
-            </a>
-        </header>
+    <main id="main-content">
 
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Beranda</a>
-            <span aria-hidden="true">›</span>
-            <span aria-current="page">FAQ</span>
-        </nav>
+        <section
+            class="subpage-panel"
+            aria-labelledby="faq-title">
 
-        <main id="main-content">
+            <header class="subpage-heading">
+                <span class="subpage-eyebrow">FAQ</span>
 
-            <section
-                class="faq-section"
-                aria-labelledby="faq-title">
+                <h1 id="faq-title">
+                    Pertanyaan Umum TAYO4D
+                </h1>
 
-                <header class="section-head">
-                    <span class="eyebrow">FAQ</span>
+                <p>
+                    Temukan informasi mengenai akses halaman,
+                    dukungan perangkat, navigasi, bantuan,
+                    dan langkah dasar ketika terjadi kendala.
+                </p>
+            </header>
 
-                    <h1 id="faq-title">
-                        Pertanyaan Umum TAYO4D
-                    </h1>
+    <div class="subpage-faq-list">
 
-                    <p>
-                        Temukan informasi mengenai akses halaman,
-                        dukungan perangkat, navigasi, bantuan,
-                        dan langkah dasar ketika terjadi kendala.
-                    </p>
-                </header>
+    <details class="subpage-faq-item">
+        <summary>
+            Bagaimana cara mengakses halaman utama?
+        </summary>
 
-                <div class="faq-list">
+        <div class="subpage-answer">
+            Gunakan tombol kembali di bagian atas halaman atau buka
+            alamat utama TAYO4D melalui tautan Beranda.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Bagaimana cara mengakses halaman utama?
-                        </summary>
+    <details class="subpage-faq-item">
+        <summary>
+            Apakah halaman mendukung perangkat mobile?
+        </summary>
 
-                        <div class="answer">
-                            Gunakan tombol kembali di bagian atas halaman
-                            atau pilih tautan Beranda pada breadcrumb dan
-                            navigasi bagian bawah.
-                        </div>
-                    </details>
+        <div class="subpage-answer">
+            Ya. Halaman dirancang responsif agar dapat digunakan pada
+            ponsel, tablet, laptop, dan desktop.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Apakah halaman mendukung perangkat mobile?
-                        </summary>
+    <details class="subpage-faq-item">
+        <summary>
+            Apakah informasi halaman tersedia selama 24 jam?
+        </summary>
 
-                        <div class="answer">
-                            Ya. Halaman dirancang responsif agar dapat digunakan
-                            pada ponsel, tablet, laptop, dan desktop.
-                        </div>
-                    </details>
+        <div class="subpage-answer">
+            Halaman informasi dapat diakses setiap saat selama situs
+            dan koneksi internet tersedia.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Apakah informasi halaman tersedia selama 24 jam?
-                        </summary>
+    <details class="subpage-faq-item">
+        <summary>
+            Bagaimana menghubungi layanan bantuan?
+        </summary>
 
-                        <div class="answer">
-                            Halaman informasi dapat diakses setiap saat selama
-                            situs dan koneksi internet tersedia.
-                        </div>
-                    </details>
+        <div class="subpage-answer">
+            Gunakan halaman Kontak atau tombol Live Chat pada halaman
+            utama untuk menghubungi layanan bantuan.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Bagaimana menghubungi layanan bantuan?
-                        </summary>
+    <details class="subpage-faq-item">
+        <summary>
+            Mengapa halaman tidak tampil dengan benar?
+        </summary>
 
-                        <div class="answer">
-                            Gunakan halaman Kontak atau tombol Live Chat
-                            pada halaman utama untuk menghubungi layanan
-                            bantuan yang tersedia.
-                        </div>
-                    </details>
+        <div class="subpage-answer">
+            Lakukan refresh, periksa koneksi internet, hapus cache
+            browser, lalu coba buka kembali halaman.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Mengapa halaman tidak tampil dengan benar?
-                        </summary>
+    <details class="subpage-faq-item">
+        <summary>
+            Bagaimana membuka halaman Provider atau Bonus?
+        </summary>
 
-                        <div class="answer">
-                            Lakukan refresh, periksa koneksi internet,
-                            hapus cache browser, kemudian coba buka kembali
-                            halaman menggunakan browser terbaru.
-                        </div>
-                    </details>
+        <div class="subpage-answer">
+            Gunakan menu navigasi pada bagian bawah halaman FAQ untuk
+            membuka halaman Provider atau Bonus.
+        </div>
+    </details>
 
-                    <details class="faq-item">
-                        <summary>
-                            Bagaimana membuka halaman Provider atau Bonus?
-                        </summary>
+    </div>
 
-                        <div class="answer">
-                            Gunakan navigasi di bawah daftar pertanyaan
-                            untuk membuka halaman Provider, Bonus,
-                            Privasi, atau Kontak.
-                        </div>
-                    </details>
-
-                </div>
-
-                <nav
-                    class="internal-nav"
-                    aria-label="Halaman informasi">
-
-                    <a href="/pages/provider">Provider</a>
-                    <a href="/pages/bonus">Bonus</a>
-                    <a href="/pages/privacy">Privasi</a>
-                    <a href="/pages/contact">Kontak</a>
-                </nav>
+            <nav class="internal-nav" aria-label="Halaman informasi">
+                <a href="/pages/provider">Provider</a>
+                <a href="/pages/bonus">Bonus</a>
+                <a href="/pages/privacy">Privasi</a>
+                <a href="/pages/contact">Kontak</a>
+            </nav>
 
             </section>
 
         </main>
 
-        <footer>
-            © 2026 TAYO4D — All Rights Reserved
-        </footer>
+    <footer class="subpage-footer">
+        © 2026 TAYO4D — All Rights Reserved
+    </footer>
 
     </div>
 

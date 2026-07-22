@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }, { passive: true });
 
+    updateHeader();
+
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             navLinks.forEach(item => item.classList.remove("active"));

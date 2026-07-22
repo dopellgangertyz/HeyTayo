@@ -6,7 +6,8 @@
 @media (max-width:767px){
 
     .app{
-        max-width:430px;
+        width:100%;
+        max-width:none;
         padding-bottom:105px;
     }
 
@@ -127,7 +128,7 @@
 
     .provider-section{
         margin-top:50px;
-        padding:0 16px 95px;
+        padding:0 16px;
     }
 
     .provider-grid{
@@ -254,15 +255,15 @@
 
     .bottom-nav{
         position:fixed;
-        left:50%;
+        left:0;
         bottom:0;
         z-index:999;
         width:100%;
-        max-width:430px;
+        max-width:none;
         height:72px;
         margin:0;
         border-radius:20px 20px 0 0;
-        transform:translateX(-50%);
+        transform:none;
     }
 
     .cursor-glow{
@@ -280,6 +281,7 @@
 
     .hero-text{
         max-width:500px;
+        padding-top:70px;
         padding-left:40px;
     }
 
@@ -334,5 +336,26 @@
 
     .hero-text h1{
         font-size:88px;
+    }
+}
+
+@media (max-width:360px){
+
+    .hero-text{
+        max-width:270px;
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .hero-text h1{
+        font-size:39px;
+    }
+
+    .cta{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
     }
 }
